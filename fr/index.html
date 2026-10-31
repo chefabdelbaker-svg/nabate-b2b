@@ -1,0 +1,55 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex">
+<title>ORIGIN by NABATE — Catalogue professionnel</title><style>
+@font-face{font-family:'Cormorant Garamond';font-weight:600;src:url('../fonts/cormorant-garamond-latin-600-normal.woff2') format('woff2')}
+@font-face{font-family:'Cormorant Garamond';font-weight:500;font-style:italic;src:url('../fonts/cormorant-garamond-latin-500-italic.woff2') format('woff2')}
+@font-face{font-family:'Jost';font-weight:500;src:url('../fonts/jost-latin-500-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-weight:400;src:url('../fonts/inter-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-weight:600;src:url('../fonts/inter-latin-600-normal.woff2') format('woff2')}
+
+:root{--p:#0E2A33;--n:#081B22;--i:#F3F1EA;--c:#B8734A}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--n);color:var(--i);font-family:'Inter',system-ui,sans-serif;overflow:hidden}
+.top{position:absolute;left:0;right:0;top:0;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(12px,3vw,28px);background:var(--p);border-bottom:2px solid var(--c);z-index:5}
+.top a{color:var(--i);text-decoration:none}
+.top .logo{display:flex;align-items:center}
+.acts{display:flex;gap:8px;align-items:center}
+.btn{font:600 13px 'Inter',sans-serif;color:var(--i);background:transparent;border:1px solid rgba(243,241,234,.45);border-radius:999px;padding:9px 16px;cursor:pointer;text-decoration:none;white-space:nowrap;min-height:40px;display:inline-flex;align-items:center}
+.btn:hover,.btn:focus-visible{background:var(--i);color:var(--p);outline:none}
+.btn.cu{background:var(--c);border-color:var(--c);color:#fff}.btn.cu:hover{background:#fff;color:var(--p)}
+#stage{position:absolute;top:56px;bottom:86px;left:0;right:0}
+#book{width:100%;height:100%}
+.nav{position:absolute;left:0;right:0;bottom:0;height:86px;display:flex;align-items:center;justify-content:center;gap:14px;padding:0 14px;z-index:5}
+.arr{width:46px;height:46px;border-radius:50%;border:1px solid rgba(243,241,234,.5);background:transparent;color:var(--i);font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none}
+.arr:hover,.arr:focus-visible{background:var(--i);color:var(--p);outline:none}
+.arr[disabled]{opacity:.3;cursor:default}
+#rng{flex:1;max-width:460px;accent-color:var(--c);height:28px}
+#cnt{font:500 12px 'Jost',sans-serif;letter-spacing:.2em;text-transform:uppercase;min-width:112px;text-align:center}
+.hint{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:11px;opacity:.55;pointer-events:none}
+#load{position:absolute;inset:56px 0 86px 0;display:flex;align-items:center;justify-content:center;font:500 12px 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#C9D3D6}
+#rot{display:none;position:absolute;left:0;right:0;top:66px;text-align:center;font:500 11px 'Jost',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--d,#D9A27C);z-index:4}
+@media(max-width:640px) and (orientation:portrait){#rot{display:block}}
+@media(max-width:640px){.btn.hide-s{display:none}.hint{display:none}#cnt{min-width:84px}}
+</style></head><body>
+<header class="top"><a class="logo" href="../" aria-label="Accueil"><svg viewBox="0 46 764.5859375 148" width="120" style="color:#F3F1EA" role="img" aria-label="ORIGIN by NABATE"><path fill="currentColor" d="M77.83 47.62Q94.14 47.62 107.96 52.94Q121.78 58.26 131.84 67.88Q141.89 77.5 147.56 90.98Q153.22 104.45 153.22 120.76Q153.22 130.04 151.07 139.02Q148.93 148.01 144.78 156.02Q140.62 164.02 134.57 170.81Q128.52 177.6 120.75 182.53Q112.99 187.46 103.61 190.24Q94.24 193.03 83.4 193.03Q67.09 193.03 53.27 187.8Q39.45 182.58 29.39 173.01Q19.34 163.44 13.67 150.01Q8.01 136.58 8.01 120.18Q8.01 110.9 10.16 101.91Q12.3 92.93 16.46 84.82Q20.61 76.72 26.61 69.93Q32.62 63.14 40.38 58.16Q48.14 53.18 57.57 50.4Q66.99 47.62 77.83 47.62ZM83.4 184.24Q94.24 184.24 103.22 180.33Q112.21 176.43 118.7 169Q125.2 161.58 128.81 150.89Q132.42 140.2 132.42 126.62Q132.42 111.58 128.96 98.74Q125.49 85.9 118.65 76.47Q111.82 67.05 101.61 61.73Q91.41 56.41 77.83 56.41Q66.99 56.41 58.01 60.26Q49.02 64.12 42.53 71.45Q36.04 78.77 32.42 89.41Q28.81 100.06 28.81 113.63Q28.81 128.57 32.23 141.51Q35.64 154.45 42.48 163.93Q49.32 173.4 59.57 178.82Q69.82 184.24 83.4 184.24Z M208.8 151.82Q208.8 160.12 209.04 166.32Q209.29 172.52 209.63 177.01Q209.97 181.5 210.51 184.53Q211.05 187.56 211.63 189.61V190H188.2V189.61Q188.78 187.56 189.32 184.53Q189.86 181.5 190.2 177.01Q190.54 172.52 190.78 166.37Q191.03 160.21 191.03 151.82V88.24Q191.03 79.94 190.78 73.74Q190.54 67.54 190.2 63.05Q189.86 58.55 189.32 55.48Q188.78 52.4 188.2 50.35V49.96L192.3 50.35Q194.15 50.55 196.45 50.6Q198.74 50.64 201.18 50.64Q204.99 50.64 211.49 49.72Q217.98 48.79 228.04 48.79Q237.41 48.79 245.37 51.33Q253.33 53.87 259.19 58.75Q265.05 63.63 268.32 70.71Q271.59 77.79 271.59 86.78Q271.59 93.81 269.79 99.81Q267.98 105.82 264.71 110.7Q261.44 115.59 256.85 119.35Q252.26 123.11 246.59 125.64L280.87 173.79Q283.41 177.4 285.61 180.04Q287.8 182.68 289.81 184.58Q291.81 186.48 293.66 187.71Q295.52 188.93 297.47 189.61V190H269.25Q268.96 188.14 267.35 185.07Q265.73 181.99 263.59 178.96L229.02 130.23Q226.77 130.43 224.52 130.58Q222.28 130.72 219.93 130.72Q217.2 130.72 214.42 130.53Q211.63 130.33 208.8 129.84ZM208.8 122.23Q211.44 122.81 214.17 123.06Q216.91 123.3 219.45 123.3Q226.77 123.3 232.82 121.1Q238.88 118.91 243.13 114.41Q247.38 109.92 249.72 103.23Q252.06 96.54 252.06 87.56Q252.06 80.23 250.4 74.28Q248.74 68.32 245.47 64.17Q242.2 60.02 237.22 57.72Q232.24 55.43 225.6 55.43Q218.86 55.43 214.86 56.11Q210.85 56.8 208.8 57.58Z M367.39 190.00 L367.39 184.00 L348.39 184.00 L348.39 92.37 L324.39 98.97 L324.39 184.00 L305.39 184.00 L305.39 190.00 L324.39 190.00 L348.39 190.00Z M348.39 56.00 L367.39 56.00 L367.39 50.00 L348.39 50.00 L324.39 50.00 L305.39 50.00 L305.39 56.00 L324.39 56.00 L324.39 89.63 L348.39 83.03Z M517.6 173.59Q517.6 174.67 517.36 175.84Q517.11 177.01 516.23 177.79Q511.84 181.11 506.71 183.9Q501.59 186.68 495.63 188.73Q489.67 190.78 482.79 191.9Q475.9 193.03 467.99 193.03Q450.22 193.03 435.57 187.8Q420.92 182.58 410.42 173.01Q399.93 163.44 394.16 150.01Q388.4 136.58 388.4 120.18Q388.4 110.9 390.79 101.91Q393.19 92.93 397.78 84.82Q402.37 76.72 409.11 69.93Q415.84 63.14 424.49 58.16Q433.13 53.18 443.53 50.4Q453.93 47.62 466.04 47.62Q470.73 47.62 475.61 48.06Q480.49 48.5 485.28 49.33Q490.06 50.16 494.51 51.33Q498.95 52.5 502.95 53.96L509.59 72.03L508.81 72.42Q505 69 500.02 66.07Q495.04 63.14 489.38 61Q483.71 58.85 477.51 57.63Q471.31 56.41 464.96 56.41Q452.66 56.41 442.41 60.26Q432.15 64.12 424.78 71.45Q417.41 78.77 413.3 89.41Q409.2 100.06 409.2 113.63Q409.2 128.57 413.11 141.37Q417.02 154.16 424.73 163.54Q432.45 172.91 444.02 178.23Q455.59 183.55 471.02 183.55Q477.86 183.55 483.23 182.48Q488.6 181.41 492.31 179.79Q496.02 178.18 497.92 176.28Q499.83 174.38 499.83 172.81V169Q499.83 162.17 499.63 157.19Q499.44 152.21 499.05 148.54Q498.66 144.88 498.17 142.25Q497.68 139.61 497 137.36V136.97H520.43V137.36Q519.85 139.41 519.31 142.2Q518.77 144.98 518.38 148.79Q517.99 152.6 517.8 157.72Q517.6 162.85 517.6 169.59Z M603.83 190.00 L603.83 184.00 L584.83 184.00 L584.83 156.97 L560.83 150.37 L560.83 184.00 L541.83 184.00 L541.83 190.00 L560.83 190.00 L584.83 190.00Z M584.83 56.00 L603.83 56.00 L603.83 50.00 L584.83 50.00 L560.83 50.00 L541.83 50.00 L541.83 56.00 L560.83 56.00 L560.83 141.03 L584.83 147.63Z M636.27 49.96 736.85 156.99V88.24Q736.85 79.94 736.66 73.74Q736.46 67.54 736.07 63Q735.68 58.46 735.14 55.43Q734.61 52.4 734.02 50.35V49.96H751.4V50.35Q750.82 52.4 750.33 55.43Q749.84 58.46 749.45 63Q749.06 67.54 748.86 73.74Q748.67 79.94 748.67 88.24V191.95H745.25L644.66 85.02V151.82Q644.66 160.12 644.86 166.32Q645.05 172.52 645.45 177.01Q645.84 181.5 646.32 184.53Q646.81 187.56 647.4 189.61V190H630.02V189.61Q630.6 187.56 631.14 184.53Q631.68 181.5 632.07 177.01Q632.46 172.52 632.65 166.32Q632.85 160.12 632.85 151.82V88.24Q632.85 79.94 632.65 73.74Q632.46 67.54 632.07 63Q631.68 58.46 631.14 55.43Q630.6 52.4 630.02 50.35V49.96Z"/><line x1="322.39" y1="94.85" x2="350.39" y2="87.15" stroke="#B8734A" stroke-width="3"/><line x1="558.83" y1="145.15" x2="586.83" y2="152.85" stroke="#B8734A" stroke-width="3"/></svg></a>
+<div class="acts"><a class="btn hide-s" href="../en/" hreflang="en">English</a>
+<a class="btn cu" href="ORIGIN_by_NABATE_Catalogue_FR.pdf" download>Télécharger le PDF</a><button class="btn hide-s" id="fs" type="button">Plein écran</button></div></header>
+<div id="rot">Tournez le téléphone pour lire en grand</div><div id="stage"><div id="load">Chargement du catalogue…</div><div id="book"></div></div>
+<nav class="nav" aria-label="Pagination"><button class="arr" id="pv" type="button" aria-label="Page précédente">&#8249;</button>
+<input id="rng" type="range" min="1" max="40" value="1" aria-label="Page"><div id="cnt" aria-live="polite">1 / 40</div>
+<button class="arr" id="nx" type="button" aria-label="Page suivante">&#8250;</button></nav><div class="hint">Cliquez sur les pages ou utilisez les flèches pour feuilleter.</div>
+<script src="../vendor/page-flip.browser.js"></script>
+<script>
+(function(){
+var N=40,imgs=[];for(var i=1;i<=N;i++)imgs.push('pages/p'+(i<10?'0':'')+i+'.webp');
+var el=document.getElementById('book'),pf=new St.PageFlip(el,{width:1280,height:720,size:'stretch',minWidth:340,maxWidth:1280,minHeight:191,maxHeight:720,
+showCover:true,usePortrait:true,startPage:0,drawShadow:true,maxShadowOpacity:.45,flippingTime:750,mobileScrollSupport:false,swipeDistance:24,autoSize:true});
+pf.loadFromImages(imgs);document.getElementById('load').style.display='none';
+var rng=document.getElementById('rng'),cnt=document.getElementById('cnt'),pv=document.getElementById('pv'),nx=document.getElementById('nx');
+function sync(i){var n=i+1;cnt.textContent=n+' / '+N;rng.value=n;pv.disabled=i<=0;nx.disabled=i>=N-1}
+pf.on('flip',function(e){sync(e.data)});sync(0);
+pv.onclick=function(){pf.flipPrev()};nx.onclick=function(){pf.flipNext()};
+rng.oninput=function(){pf.turnToPage(parseInt(rng.value,10)-1);sync(parseInt(rng.value,10)-1)};
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')pf.flipNext();if(e.key==='ArrowLeft')pf.flipPrev()});
+var fs=document.getElementById('fs');fs.onclick=function(){var d=document.documentElement;if(document.fullscreenElement){document.exitFullscreen()}else if(d.requestFullscreen){d.requestFullscreen()}};
+})();
+</script></body></html>

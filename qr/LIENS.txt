@@ -1,0 +1,5 @@
+hub -> https://chefabdelbaker-svg.github.io/nabate-b2b/
+fr-flipbook -> https://chefabdelbaker-svg.github.io/nabate-b2b/fr/
+en-flipbook -> https://chefabdelbaker-svg.github.io/nabate-b2b/en/
+fr-pdf -> https://chefabdelbaker-svg.github.io/nabate-b2b/fr/ORIGIN_by_NABATE_Catalogue_FR.pdf
+en-pdf -> https://chefabdelbaker-svg.github.io/nabate-b2b/en/ORIGIN_by_NABATE_Catalogue_EN.pdf
