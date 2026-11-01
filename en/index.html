@@ -35,12 +35,12 @@
 <a class="btn cu" href="ORIGIN_by_NABATE_Catalogue_EN.pdf" download>Download the PDF</a><button class="btn hide-s" id="fs" type="button">Full screen</button></div></header>
 <div id="rot">Rotate your phone for a larger view</div><div id="stage"><div id="load">Loading the catalogue…</div><div id="book"></div></div>
 <nav class="nav" aria-label="Pagination"><button class="arr" id="pv" type="button" aria-label="Previous page">&#8249;</button>
-<input id="rng" type="range" min="1" max="105" value="1" aria-label="Page"><div id="cnt" aria-live="polite">1 / 105</div>
+<input id="rng" type="range" min="1" max="112" value="1" aria-label="Page"><div id="cnt" aria-live="polite">1 / 112</div>
 <button class="arr" id="nx" type="button" aria-label="Next page">&#8250;</button></nav><div class="hint">Click the pages or use the arrow keys to flip through.</div>
 <script src="../vendor/page-flip.browser.js"></script>
 <script>
 (function(){
-var N=105,imgs=[];for(var i=1;i<=N;i++)imgs.push('pages/p'+(i<10?'0':'')+i+'.webp');
+var N=112,imgs=[];for(var i=1;i<=N;i++)imgs.push('pages/p'+(i<10?'0':'')+i+'.webp');
 var el=document.getElementById('book'),pf=new St.PageFlip(el,{width:794,height:1123,size:'stretch',minWidth:300,maxWidth:794,minHeight:424,maxHeight:1123,
 showCover:true,usePortrait:true,startPage:0,drawShadow:true,maxShadowOpacity:.45,flippingTime:750,mobileScrollSupport:false,swipeDistance:24,autoSize:true});
 pf.loadFromImages(imgs);document.getElementById('load').style.display='none';
